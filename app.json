@@ -1,29 +1,49 @@
 {
   "expo": {
-    "name": "TaskManagement",
+    "name": "Task Management",
     "slug": "TaskManagement",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/Splashscreen.png",
     "userInterfaceStyle": "light",
-    "newArchEnabled": true,
+    "newArchEnabled": false,
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/Splashscreen.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+
     "ios": {
       "supportsTablet": true
     },
+
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/Splashscreen.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.javier128bit.TaskManagement2",
+      "permissions": ["INTERNET", "NOTIFICATIONS"]
     },
+
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "color": "#7CB9E8"
+        }
+      ]
+    ],
+
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/Splashscreen.png"
+    },
+
+    "extra": {
+      "eas": {
+        "projectId": "b0d21e67-f20e-4a73-9b18-81ed00044ac2"
+      }
     }
   }
 }
